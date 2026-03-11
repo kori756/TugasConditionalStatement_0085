@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+void input(float NilTB, float NilBB){
+
+    cout << "Masukan Berat Badan(KG) : " ;   
+    cin >> NilBB ;
+    cout << "Masukan Tinggi badan(METER) : " ;
+    cin >> NilTB ;
+}
 float perhitungan_BMI(float a,float b){
     return a/(b*b);
 }
@@ -17,14 +24,13 @@ float perhitungan_BMI(float a,float b){
 }
 
  int main(){
-    float NilBB, NilTB;
+    float NilBB, NilTB, Hasil_BMI;
 
-    cout << "Masukan Berat Badan(KG) : " ;   
-    cin >> NilBB ;
-    cout << "Masukan Tinggi badan(METER) : " ;
-    cin >> NilTB ;
+    input(NilBB, NilTB);
+
+    Hasil_BMI = perhitungan_BMI(NilBB, NilTB);
     
-    cout << "BMI Anda = " <<perhitungan_BMI<<",dengan status = " << perhitungan_BMI<<endl;
+   cout << "BMI Anda = " << Hasil_BMI << ", dengan status = " << bmi(Hasil_BMI) << endl;
  
 }
 
