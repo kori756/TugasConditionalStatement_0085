@@ -9,6 +9,9 @@ cin >> NilBB ;
 cout << "Masukan Tinggi badan(METER) : " ;
 cin >> NilTB ;
 
+float perhitungan_bmi(float a,float b){
+    return a/(b*b);
+
 
 
  
