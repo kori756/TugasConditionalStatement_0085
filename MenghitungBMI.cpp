@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void input(float NilTB, float NilBB){
+void input(float &NilBB, float &NilTB){
 
     cout << "Masukan Berat Badan(KG) : " ;   
     cin >> NilBB ;
@@ -9,7 +9,7 @@ void input(float NilTB, float NilBB){
     cin >> NilTB ;
 }
 float perhitungan_BMI(float a,float b){
-    return a/(b*b);
+    return a / (b*b);
 }
  string bmi (float r){
     if(r < 18.5) {
